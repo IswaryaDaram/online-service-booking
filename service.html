@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Service Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Book a Service</h1>
+
+        <form id="booking-form">
+            <label for="service">Select a service:</label>
+            <select id="service" name="service" required>
+                <option value="">--Select Service--</option>
+                <option value="Consultation">Consultation</option>
+                <option value="Repair">Repair</option>
+                <option value="Installation">Installation</option>
+            </select>
+
+            <label for="date">Select a date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select a time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <div id="confirmation" class="hidden">
+            <h2>Booking Confirmed!</h2>
+            <p id="booking-details"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
